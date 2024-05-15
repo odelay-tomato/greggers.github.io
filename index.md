@@ -1,4 +1,4 @@
----
-title: Welcome!
----
-This is the index.md page.
+
+## Welcome 
+
+This is the place where I notice, collect, and share. 
