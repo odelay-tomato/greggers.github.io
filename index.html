@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>+/-</title>
+  <style>
+    body {
+      margin: 30px;
+      font-family: Times,serif;
+      line-height: 1.4em;
+      font-size: 18px;
+      color: #3b3a38;
+    }
+    #content {
+      max-width: 600px;
+      display: inline-block;
+      float: left;
+      margin-bottom: 80px;
+    }
+    .bot-list {
+      display: inline-block;
+      margin-left: 70px;
+    }
+      iframe {
+        width: 300px;
+      }
+    h1 {
+    }
+    h2 {
+      color: rgba(0,0,0,0.5);
+    }
+    h3 {
+      color: rgba(0,0,0,0.5);
+    }
+    .header a {
+      color: rgba(0,0,0,0.5);
+      text-decoration: none;
+    }
+    a {
+      color: rgba(0,0,255,0.45);
+    }
+  </style>
+  <script type="text/javascript">
+    function leaveLV(id) {
+      var today = new Date();
+      var eday = new Date('2024-06-16');
+      var one_day = 1000 * 60 * 60 * 24;
+      var diff = (eday - today)/one_day
+      document.getElementById(id).innerHTML = 'leave for LV: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
+      return true;
+    };
+  </script>
+  <script type="text/javascript">
+    function startScotland(id) {
+      var today = new Date();
+      var eday = new Date('2025-08-17');
+      var one_day = 1000 * 60 * 60 * 24;
+      var diff = (eday - today)/one_day
+      document.getElementById(id).innerHTML = 'tour start: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
+      return true;
+    };
+  </script>
+</head>
+<body>
+  <h2>+/-</h2>
+  <div id="content">
+    <div id="timeweeks"  style="background: #eee; padding: 4px; text-align: center; font-size: small; color: #999;">
+      <span id="leaveLV" style="background: #eee;"></span> |
+        <script type="text/javascript">window.onload = leaveLV('leaveLV');</script>
+      <span id="startScotland" style="background: #eee;"></span>
+        <script type="text/javascript">window.onload = startEurope('startScotland');</script>
+    </div>
+    <p>daily &#8250; <a href="https://ohai.social/home">mast</a> / <a href="https://instagram.com/">insta</a>
+    </p>
+    <p>tools &#8250; <a href="http://gmail.google.com">gmail</a>
+    </p>
+    <p>misc &#8250; <a href="https://drive.google.com/drive/u/0/my-drive">drive</a>
+    </p>
+    </body>
+</html>
