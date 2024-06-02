@@ -1,3 +1,3 @@
 # odelay-tomato.github.io
 
-My blog and collection of ephemera.
+An always on startpage.
