@@ -42,12 +42,13 @@
     }
   </style>
   <script type="text/javascript">
-    function leaveLV(id) {
+    function leaveAK(id) {
       var today = new Date();
-      var eday = new Date('2024-06-16');
+      var eday = new Date('2025-05-16');
       var one_day = 1000 * 60 * 60 * 24;
       var diff = (eday - today)/one_day
-      document.getElementById(id).innerHTML = 'leave for LV: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
+      document.getElementById(id).innerHTML = 'leave for AK: ' + diff.toFixed(0) + 'd';
+      // document.getElementById(id).innerHTML = 'leave for AK: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
       return true;
     };
   </script>
@@ -57,7 +58,8 @@
       var eday = new Date('2025-08-17');
       var one_day = 1000 * 60 * 60 * 24;
       var diff = (eday - today)/one_day
-      document.getElementById(id).innerHTML = 'tour start: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
+      document.getElementById(id).innerHTML = 'scotland: ' + diff.toFixed(0) + 'd';
+      // document.getElementById(id).innerHTML = 'scotland: ' + diff.toFixed(0) + 'd / ' + Math.round((eday-today)/(1000*3600*24*7)) + 'w';
       return true;
     };
   </script>
@@ -67,7 +69,7 @@
   <div id="content">
     <div id="timeweeks"  style="background: #eee; padding: 4px; text-align: center; font-size: small; color: #999;">
       <span id="leaveLV" style="background: #eee;"></span> |
-        <script type="text/javascript">window.onload = leaveLV('leaveLV');</script>
+        <script type="text/javascript">window.onload = leaveAK('leaveAK');</script>
       <span id="startScotland" style="background: #eee;"></span>
         <script type="text/javascript">window.onload = startScotland('startScotland');</script>
     </div>
